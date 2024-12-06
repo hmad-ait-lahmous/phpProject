@@ -1,0 +1,135 @@
+/* Page Container */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #81e6d9, #319795); /* Light Teal Blue gradient */
+  padding: 1.5rem;
+}
+
+/* Form Container */
+.component-container {
+  width: 100%;
+  max-width: 400px; /* Reduced size for a smaller form */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+  padding: 2rem; /* Compact padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Heading */
+h1 {
+  font-size: 1.8rem; /* Reduced heading size */
+  font-weight: bold;
+  text-align: center;
+  color: #319795; /* Teal Blue */
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 0.8rem; /* Slightly smaller input */
+  font-size: 0.9rem; /* Reduced font size */
+  border: 1px solid #d1d5db;
+  border-radius: 12px; /* Slightly smaller radius */
+  background: #e6fffa; /* Soft teal tint */
+  margin-bottom: 1.2rem; /* Compact spacing */
+  transition: border 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+input:focus {
+  border-color: #319795;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px rgba(49, 151, 149, 0.2); /* Subtle focus shadow */
+}
+
+/* Label Styling */
+label {
+  font-size: 0.9rem; /* Reduced label font size */
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+/* Role Selection */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 1.2rem; /* Compact spacing */
+}
+
+.flex label {
+  font-size: 0.9rem;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.flex input {
+  accent-color: #319795; /* Teal accent for radio buttons */
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 0.8rem; /* Smaller button size */
+  background: linear-gradient(135deg, #81e6d9, #319795); /* Lightened teal gradient */
+  color: white;
+  border: none;
+  border-radius: 12px; /* Smaller radius */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #319795, #81e6d9); /* Inverted lighter gradient */
+  box-shadow: 0px 4px 12px rgba(49, 151, 149, 0.4); /* Teal glow */
+  transform: translateY(-2px); /* Slight elevation */
+}
+
+/* Error Messages */
+.text-red-500 {
+  color: #e53e3e;
+  font-size: 0.8rem; /* Reduced size for error text */
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 0.8rem; /* Reduced footer text size */
+  color: #319795;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-text a {
+  color: #319795;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .component-container {
+    width: 85%; /* Adjust for smaller screens */
+    padding: 1.5rem;
+  }
+}
