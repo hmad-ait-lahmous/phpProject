@@ -22,6 +22,10 @@ const DataFetcher = () => {
   return (
     <div>
       <h1>Fetched Data</h1>
+      <h1>Fetched Data</h1>
+      <h1>Fetched Data</h1>
+      <h1>Fetched Data</h1>
+      <h1>Fetched Data</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {data ? (
         <pre>{JSON.stringify(data, null, 2)}</pre>
