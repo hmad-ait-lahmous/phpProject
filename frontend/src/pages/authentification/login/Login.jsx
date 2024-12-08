@@ -62,8 +62,10 @@ const LoginPage = () => {
             console.log('response User:  ',responseJ.data.user); 
             
             if(response.data.user &&responseJ.data.user.email === email){
-                // localStorage.setItem('user',)
-                navigate('/admin');
+                const user = responseJ.data.user;
+                localStorage.setItem('user',user)
+                console.log('stored User:  ',user); 
+                navigate('/home');
             }
             else{
                 console.log('check credentials');
@@ -146,7 +148,7 @@ const LoginPage = () => {
             </form>
         </div>
     </div>
-    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     </div> 
     );
 }
